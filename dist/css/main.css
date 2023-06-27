@@ -63,47 +63,53 @@ body {
   margin: 24px 0 32px;
   display: flex;
   flex-direction: row;
-  gap: 21px;
+  justify-content: space-between;
 }
-.card .rate-wrap-label {
-  background: hsl(213, 19%, 18%);
+.card .rate-wrap-item {
+  position: relative;
   width: 51px;
   height: 51px;
-  border: none;
-  border-radius: 50%;
-  position: relative;
+  background: hsl(213, 19%, 18%);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
 }
-.card .rate-wrap-label span {
-  position: inherit;
-  color: hsl(216, 12%, 54%);
-  z-index: 2;
-  padding: 0;
-  margin: 0;
-}
-.card .rate-wrap-label input[type=radio] {
+.card .rate-wrap-item-radio {
   position: absolute;
   width: 100%;
   height: 100%;
-  accent-color: red;
-  background: hsl(213, 19%, 18%);
-  border: none;
-  background-clip: content-box;
+  appearance: none;
   cursor: pointer;
-  z-index: 0;
 }
-.card .rate-wrap-label input[type=radio]:checked,
-.card .rate-wrap-label input[type=radio]:focus {
-  background: var(--medium-grey);
-  color: white;
+.card .rate-wrap-item-radio:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+.card .rate-wrap-item-radio:hover + .rate-wrap-item-label {
+  color: hsl(0, 0%, 100%);
+}
+.card .rate-wrap-item-radio:checked {
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  height: 100%;
+  transform: none;
+  color: hsl(0, 0%, 100%);
+}
+.card .rate-wrap-item-radio:checked + .rate-wrap-item-label {
+  color: hsl(0, 0%, 100%);
+}
+.card .rate-wrap-item-label {
+  position: relative;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
 }
 .card .rate .btn {
   display: block;
   width: 100%;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: hsl(25, 97%, 53%);
   border: none;
   border-radius: 22px;
@@ -113,6 +119,10 @@ body {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+.card .rate .btn:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 /*# sourceMappingURL=main.css.map */

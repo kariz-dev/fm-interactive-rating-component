@@ -24,52 +24,32 @@
       <div class="card-desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</div>
       <form name="rateForm" action="#" class="rate">
 				<div class="rate-wrap">
-					<label class="rate-wrap-label">
-						<span name="rateLabel">1</span>
-						<input type="radio" class="rate_input" name="rateGroup" value="1" id="rate-input-1">
-					</label>
-
-					<label class="rate-wrap-label">
-						<span name="rateLabel">2</span>
-						<input type="radio" class="rate_input" name="rateGroup" value="2" id="rate-input-2">
-					</label>
-
-					<label class="rate-wrap-label">
-						<span name="rateLabel">3</span>
-						<input type="radio" class="rate_input" name="rateGroup" value="3" id="rate-input-3">
-					</label>
-
-					<label class="rate-wrap-label">
-						<span name="rateLabel">4</span>
-						<input type="radio" class="rate_input" name="rateGroup" value="4" id="rate-input-4">
-					</label>
-
-					<label class="rate-wrap-label">
-						<span name="rateLabel">5</span>
-						<input type="radio" class="rate_input" name="rateGroup" value="5" id="rate-input-5">
-					</label>
-
+					<div class="rate-wrap-item">
+						<input type="radio" id="radio1" name="selector" class="rate-wrap-item-radio">
+            <label for="radio1" class="rate-wrap-item-label">1</label>
+					</div>
+					<div class="rate-wrap-item">
+						<input type="radio" id="radio2" name="selector" class="rate-wrap-item-radio">
+            <label for="radio2" class="rate-wrap-item-label">2</label>
+					</div>
+					<div class="rate-wrap-item">
+						<input type="radio" id="radio3" name="selector" class="rate-wrap-item-radio">
+            <label for="radio3" class="rate-wrap-item-label">3</label>
+					</div>
+					<div class="rate-wrap-item">
+						<input type="radio" id="radio4" name="selector" class="rate-wrap-item-radio">
+            <label for="radio4" class="rate-wrap-item-label">4</label>
+					</div>
+					<div class="rate-wrap-item">
+						<input type="radio" id="radio5" name="selector" class="rate-wrap-item-radio">
+            <label for="radio5" class="rate-wrap-item-label">5</label>
+					</div>
 				</div>
 				<button type="submit" class="btn">Submit</button>
 				<div class="errors hidden"></div>
 			</form>
     </div>
   </main>
-
-  <!-- Rating state start 
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  -->
-
-  <!-- Rating state end -->
 
   <!-- Thank you state start 
 
@@ -82,5 +62,6 @@
 
   -->
 
+  <script src="/app/js/main.js"></script>
 </body>
 </html>
