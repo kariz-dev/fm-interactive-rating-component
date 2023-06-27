@@ -8,15 +8,55 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Style -->
+  <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <main id="app">
+    <div class="card">
+      <div class="card-icon">
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/>
+        </svg>
+      </div>
+      <h1 class="card-title">How did we do?</h1>
+      <div class="card-desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</div>
+      <form name="rateForm" action="#" class="rate">
+				<div class="rate-wrap">
+					<label class="rate-wrap-label">
+						<span name="rateLabel">1</span>
+						<input type="radio" class="rate_input" name="rateGroup" value="1" id="rate-input-1">
+					</label>
+
+					<label class="rate-wrap-label">
+						<span name="rateLabel">2</span>
+						<input type="radio" class="rate_input" name="rateGroup" value="2" id="rate-input-2">
+					</label>
+
+					<label class="rate-wrap-label">
+						<span name="rateLabel">3</span>
+						<input type="radio" class="rate_input" name="rateGroup" value="3" id="rate-input-3">
+					</label>
+
+					<label class="rate-wrap-label">
+						<span name="rateLabel">4</span>
+						<input type="radio" class="rate_input" name="rateGroup" value="4" id="rate-input-4">
+					</label>
+
+					<label class="rate-wrap-label">
+						<span name="rateLabel">5</span>
+						<input type="radio" class="rate_input" name="rateGroup" value="5" id="rate-input-5">
+					</label>
+
+				</div>
+				<button type="submit" class="btn">Submit</button>
+				<div class="errors hidden"></div>
+			</form>
+    </div>
+  </main>
+
+  <!-- Rating state start 
 
   How did we do?
 
@@ -27,23 +67,20 @@
 
   Submit
 
+  -->
+
   <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+  <!-- Thank you state start 
 
-  You selected <!-- Add rating here --> out of 5
+  You selected # Add rating here # out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
 
-  <!-- Thank you state end -->
+  -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
