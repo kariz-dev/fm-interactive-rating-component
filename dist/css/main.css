@@ -20,4 +20,99 @@ body {
   background: hsl(216, 12%, 8%);
 }
 
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 412px;
+  height: 416px;
+  padding: 32px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  border: none;
+  border-radius: 30px;
+}
+.card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(213, 19%, 18%);
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.card-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.card-desc {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 24px;
+  width: 340px;
+}
+.card .rate-wrap {
+  margin: 24px 0 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+}
+.card .rate-wrap-label {
+  background: hsl(213, 19%, 18%);
+  width: 51px;
+  height: 51px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .rate-wrap-label span {
+  position: inherit;
+  color: hsl(216, 12%, 54%);
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+.card .rate-wrap-label input[type=radio] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  accent-color: red;
+  background: hsl(213, 19%, 18%);
+  border: none;
+  background-clip: content-box;
+  cursor: pointer;
+  z-index: 0;
+}
+.card .rate-wrap-label input[type=radio]:checked,
+.card .rate-wrap-label input[type=radio]:focus {
+  background: var(--medium-grey);
+  color: white;
+}
+.card .rate .btn {
+  display: block;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
 /*# sourceMappingURL=main.css.map */
