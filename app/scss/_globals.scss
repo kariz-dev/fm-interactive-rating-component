@@ -22,6 +22,14 @@ body {
   background: $veryDarkBlue;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
 #app {
   width: 100vw;
   height: 100vh;
