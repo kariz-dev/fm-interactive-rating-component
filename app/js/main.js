@@ -1,26 +1,4 @@
-function modalPopUp () {
-  // selector
-  const modal = document.getElementById("modal");
 
-  // trigger
-  const btn = document.getElementById("btn");
-
-  // trigger onClick
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-}
-
-modalPopUp();
-
-let form = document.forms["my-form"];
-form.addEventListener("submit", getValues);
-
-function getValues(event){
-	event.preventDefault();
-}
-console.log(getValues)
 // 
 
 // let form = document.forms["my-form"];
@@ -54,3 +32,26 @@ console.log(getValues)
 
 // 	document.querySelector(".out code").innerHTML = out;
 // }
+
+var triggerBtn = $('[data-show=modal]').click(function(event){
+  var modalId = $(this).attr('data-target');        
+  $('#' + modalId).show();
+});
+
+$('.modal__close').click(function(event){        
+  $(this).parents('.modal').hide();
+});
+
+$(window).click(function(event){
+  if (event.target.className === 'modal') {
+          $(event.target).hide();
+  }
+});
+
+function modalShow(modalId){
+  $('#' + modalId).show();
+}
+
+function modalHide(modalId){
+  $('#' + modalId).hide();
+}
