@@ -5,6 +5,9 @@ const radioForm = document.forms["rateForm"];
 const modal = document.getElementById("modal");
 const card = document.getElementById("card");
 
+// Get the <span> element that closes the modal
+const closeBtn = document.getElementsByClassName("close")[0];
+
 radioForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the form from submitting
 
@@ -18,5 +21,17 @@ radioForm.addEventListener("submit", function (event) {
   // Show the modal popup
   modal.style.display = "block";
   card.style.display = "none";
+});
 
+// Add event listener to the close button
+closeBtn.addEventListener("click", function () {
+  // Hide the modal popup
+  modal.style.display = "none";
+  card.style.display = "block";
+
+  // Reset the radio button selection
+  const selectedRadioButton = document.querySelector("input[name='selector']:checked");
+  if (selectedRadioButton) {
+    selectedRadioButton.checked = false;
+  }
 });

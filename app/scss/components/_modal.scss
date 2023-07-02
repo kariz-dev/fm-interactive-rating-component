@@ -9,7 +9,18 @@
   );
   border: none;
   border-radius: 30px;
+  
+  position: relative;
 
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: $lightGrey;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
   &-img {
     margin-bottom: 32px;
     width: 162px;
